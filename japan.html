@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yume no Sakura</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Noto+Sans+JP:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="japan.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Yume no <span>Sakura</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Visit</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="hero">
+        <div class="hero-scene"></div>
+        <canvas id="petal-canvas"></canvas>
+        <div class="hero-text">
+            <div class="hero-jp">夢の<br>桜</div>
+            <div class="hero-en-title">Yume no Sakura</div>
+            <div class="hero-divider"></div>
+            <div class="hero-body">
+                <p>Where cherry blossoms meet eternity,</p>
+                <p>and ancient mountains hold their silence.</p>
+                <p>Discover the breathtaking beauty of Japan.</p>
+                <span class="hero-portfolio-tag">Portfolio · 2026</span>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <main>
+
+
+        <section id="about">
+            <div class="section-label reveal">01 · ABOUT</div>
+            <h2 class="section-title reveal d1">The land<br><em>of wonders</em></h2>
+
+            <div class="bento">
+
+                <div class="card c1 ac-1 reveal d1">
+                    <div class="card-tag">ESSENCE</div>
+                    <div class="bio-name">日本 · Nihon</div>
+                    <div class="bio-role">The Land of the Rising Sun</div>
+                    <p>Japan is a place where ancient temples share streets with neon towers, where snow-capped Fuji
+                        watches over cedar forests, and where sakura blossoms fall like a slow, sacred rain. Every
+                        season, every mountain, every stone garden is a poem.</p>
+                    <div class="about-expand">
+                        <div class="about-expand-text" id="about-desc-1">From the volcanic peaks of Hokkaido to the
+                            subtropical shores of Okinawa, Japan spans 3,000 kilometres of breathtaking contrast — a
+                            nation that has mastered the art of holding ancient and modern in the same hand, perfectly
+                            balanced.</div>
+                    </div>
+                </div>
+
+
+                <div class="card c2 card-kanji reveal d2">
+                    <div class="kanji-char">美</div>
+                    <div class="kanji-sub">BI · BEAUTY · GRACE</div>
+                    <div class="about-expand">
+                        <div class="about-expand-text" id="about-desc-5">Beauty in Japan is often quiet and minimal —
+                            found in the curve of a gate, the pause between seasons, and the perfect balance of ordinary
+                            moments.</div>
+                    </div>
+                </div>
+
+
+                <div class="card c3 ac-3 reveal d2">
+                    <div class="card-tag">LANDSCAPE</div>
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-num" id="stat-num-1">3776</div>
+                            <div class="stat-label">Metres — Mt. Fuji peak</div>
+                        </div>
+                        <div class="stat-arrow">›</div>
+                    </div>
+                    <div class="about-expand">
+                        <div class="about-expand-text" id="about-desc-2">Fuji-san is Japan's highest and most sacred
+                            peak — a near-perfect volcanic cone that has inspired poets, pilgrims, and painters for
+                            centuries. On clear winter mornings it is visible from Tokyo, 100 km away.</div>
+                    </div>
+                </div>
+
+
+                <div class="card c4 ac-4 reveal d3">
+                    <div class="card-tag">FLORA</div>
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-num" id="stat-num-2">200+</div>
+                            <div class="stat-label">Sakura varieties</div>
+                        </div>
+                        <div class="stat-arrow">›</div>
+                    </div>
+                    <div class="about-expand">
+                        <div class="about-expand-text" id="about-desc-3">From the pale Somei-Yoshino to the deep-pink
+                            Kanzan, Japan's cherry blossoms bloom in waves from late March to early May — a fleeting
+                            season so beloved it has its own tracking forecast, the sakura zensen.</div>
+                    </div>
+                </div>
+
+
+                <div class="card c5 ac-5 reveal d4">
+                    <div class="card-tag">SHRINES</div>
+                    <div class="stat-header">
+                        <div>
+                            <div class="stat-num" id="stat-num-3">80K</div>
+                            <div class="stat-label">Shinto shrines</div>
+                        </div>
+                        <div class="stat-arrow">›</div>
+                    </div>
+                    <div class="about-expand">
+                        <div class="about-expand-text" id="about-desc-4">Japan's 80,000 Shinto shrines outnumber its
+                            convenience stores. Every forest clearing, every hilltop, every seaside cliff may hide a
+                            torii gate — a threshold between the human world and the divine.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sec-divider"></div>
+
+
+        <section id="places">
+            <div class="section-label reveal">02 · PLACES</div>
+            <h2 class="section-title reveal d1">Beautiful<br><em>destinations</em></h2>
+        
+            <div class="work-grid">
+        
+                <a class="place-card reveal d1" href="https://en.wikipedia.org/wiki/Arashiyama" target="_blank" rel="noopener">
+        
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg/500px-2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg"
+                        alt="Arashiyama Bamboo Grove" loading="lazy">
+        
+                    <div class="place-card-overlay">
+                        <span class="place-num">01</span>
+                        <div class="place-region">KYOTO · 嵐山</div>
+                        <div class="place-name">Arashiyama</div>
+                        <div class="place-desc">
+                            A towering bamboo grove where filtered light turns green and the rustle of stalks silences the
+                            world.
+                        </div>
+                        <span class="place-link">Explore &rarr;</span>
+                    </div>
+                </a>
+        
+                <a class="place-card reveal d2" href="https://en.wikipedia.org/wiki/Fushimi_Inari-taisha" target="_blank"
+                    rel="noopener">
+        
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/500px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg"
+                        alt="Fushimi Inari Torii Gates" loading="lazy">
+        
+                    <div class="place-card-overlay">
+                        <span class="place-num">02</span>
+                        <div class="place-region">KYOTO · 伏見稲荷</div>
+                        <div class="place-name">Fushimi Inari</div>
+                        <div class="place-desc">
+                            Ten thousand vermilion torii gates wind up a sacred mountain — an endless tunnel between worlds.
+                        </div>
+                        <span class="place-link">Explore &rarr;</span>
+                    </div>
+                </a>
+        
+                <a class="place-card reveal d3" href="https://en.wikipedia.org/wiki/Mount_Fuji" target="_blank" rel="noopener">
+        
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/960px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+                        alt="Mount Fuji" loading="lazy">
+        
+                    <div class="place-card-overlay">
+                        <span class="place-num">03</span>
+                        <div class="place-region">SHIZUOKA · 富士山</div>
+                        <div class="place-name">Mount Fuji</div>
+                        <div class="place-desc">
+                            Japan's eternal icon — a perfect volcanic cone reflected in still lakes, ringed by clouds at dawn.
+                        </div>
+                        <span class="place-link">Explore &rarr;</span>
+                    </div>
+                </a>
+        
+            </div>
+        </section>
+
+        <div class="sec-divider"></div>
+
+
+        <section id="highlights">
+            <div class="section-label reveal">03 · HIGHLIGHTS</div>
+            <h2 class="section-title reveal d1">Flora &amp;<br><em>fauna</em></h2>
+
+            <div class="highlights-grid">
+
+                <div class="highlight-big reveal-left">
+                    <img class="highlight-big-img"
+                        src="https://avatars.mds.yandex.net/i?id=4d373504a21f36886e3659c30f0960fc_l-5883245-images-thumbs&n=13"
+                        alt="Sakura Hanami" loading="lazy">
+                    <div class="highlight-big-overlay">
+                        <div class="highlight-big-label">SAKURA · 桜</div>
+                        <div class="highlight-big-title">Hanami — the art<br>of blossom viewing</div>
+                        <div class="highlight-big-body">Every spring, Japan is draped in pale pink clouds as millions
+                            gather beneath flowering sakura trees. Hanami is not merely cherry blossom viewing — it is a
+                            meditation on beauty, on impermanence, on the grace of things that do not last.</div>
+                    </div>
+                </div>
+
+
+                <div class="highlight-small-col reveal-right">
+
+                    <div class="highlight-small hs-1">
+                        <div class="h-small-header">
+                            <div class="h-small-jp">鹿</div>
+                            <div class="h-small-text-wrap">
+                                <div class="h-small-en">Nara's Sacred Deer</div>
+                            </div>
+                        </div>
+                        <div class="h-small-sub">Over 1,000 sika deer roam freely through Nara Park — considered divine
+                            messengers of the gods, bowing for rice crackers along ancient stone paths.</div>
+                        <div class="h-small-more">In Nara, quiet temple gardens and wandering deer create a calm world
+                            where every footstep feels ceremonial.</div>
+                    </div>
+
+                    <div class="highlight-small hs-2">
+                        <div class="h-small-header">
+                            <div class="h-small-jp">梅</div>
+                            <div class="h-small-text-wrap">
+                                <div class="h-small-en">Ume — Winter Plum</div>
+                            </div>
+                        </div>
+                        <div class="h-small-sub">Before sakura arrives, ume blossoms pierce the cold in white and
+                            crimson — the first breath of approaching spring on February winds.</div>
+                        <div class="h-small-more">The fragile plum flower marks the shift from winter‘s stillness to
+                            spring‘s soft beginnings.</div>
+                    </div>
+
+                    <div class="highlight-small hs-3">
+                        <div class="h-small-header">
+                            <div class="h-small-jp">紅葉</div>
+                            <div class="h-small-text-wrap">
+                                <div class="h-small-en">Koyo — Autumn Leaves</div>
+                            </div>
+                        </div>
+                        <div class="h-small-sub">Maple trees ignite in October. Temple gardens burn in red and gold.
+                            Japan's second great pilgrimage of beauty draws millions to mountain shrines.</div>
+                        <div class="h-small-more">The forest is transformed into a living painting, each leaf a
+                            brushstroke of crimson.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="sec-divider"></div>
+
+        <section id="journey">
+            <div class="section-label reveal">04 · JOURNEY</div>
+            <h2 class="section-title reveal d1">Seasonal<br><em>calendar</em></h2>
+
+            <div class="journey-inner">
+                <div class="timeline">
+                    <div class="tl-item reveal d1">
+                        <div class="tl-year">SPRING · 春</div>
+                        <div class="tl-title">Sakura Season</div>
+                        <div class="tl-desc">Late March to early May. Cherry blossoms sweep north from Kyushu to
+                            Hokkaido. Ueno Park, Philosopher's Path, Hirosaki Castle — pink without end.</div>
+                    </div>
+                    <div class="tl-item reveal d2">
+                        <div class="tl-year">SUMMER · 夏</div>
+                        <div class="tl-title">Festivals &amp; Fireflies</div>
+                        <div class="tl-desc">July brings Gion Matsuri in Kyoto — ancient floats, lanterns on rivers,
+                            taiko drums at night. Mountain streams host fireflies in June's blue dusk.</div>
+                    </div>
+                    <div class="tl-item reveal d3">
+                        <div class="tl-year">AUTUMN · 秋</div>
+                        <div class="tl-title">The Red Forests</div>
+                        <div class="tl-desc">October–November. Nikko's temples glow beneath maple canopies. Kyoto's
+                            Eikan-do turns scarlet. Every garden becomes a painting no artist could improve.</div>
+                    </div>
+                    <div class="tl-item reveal d4">
+                        <div class="tl-year">WINTER · 冬</div>
+                        <div class="tl-title">Snow &amp; Silence</div>
+                        <div class="tl-desc">Shirakawa-go under snow is a fantasy — thatched roofs white and heavy.
+                            Hokkaido's powder slopes and Zao's ice monsters make winter its own wonder. Long nights glow
+                            with lantern light and warm sake, a quiet celebration beneath the snow.</div>
+                    </div>
+                </div>
+
+                <div class="journey-card reveal d2">
+                    <div class="j-kanji">道</div>
+                    <div class="j-sub">MICHI · THE PATH</div>
+                    <div class="j-divider"></div>
+                    <div class="j-quote">"In Japan, the journey is not a means to an end — the journey is the poem
+                        itself."</div>
+                    <img class="j-photo"
+                        src="https://i.ytimg.com/vi/6niFeSFKsoc/maxresdefault.jpg"
+                        alt="Path through a Japanese garden" loading="lazy">
+                    <div class="j-sub secondary">MICHI · THE PATH</div>
+                    <div class="j-quote-secondary">"Paths in Japan invite quiet reflection — each step reveals another
+                        layer
+                        of history, light, and stillness."</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sec-divider"></div>
+
+
+        <section id="contact">
+            <div class="section-label reveal">05 · VISIT</div>
+            <div class="contact-grid">
+                <div class="contact-left reveal-left">
+                    <div class="big-jp">一緒に<br>行きましょう</div>
+                    <div class="sub-en">Let's go together.</div>
+                    <div class="contact-decorline"></div>
+                    <p>Japan waits with open temples and lantern-lit streets. Whether you seek stillness in cedar
+                        forests, wonder beneath torii gates, or the silent fall of sakura petals — there is a corner of
+                        Japan made exactly for you.</p>
+
+                    <div class="visit-list">
+                        <div class="visit-item">
+                            <div class="visit-jp">京</div>
+                            <div class="visit-info">
+                                <div class="visit-name">Kyoto</div>
+                                <div class="visit-where">Ancient temples, geisha districts, bamboo</div>
+                            </div>
+                        </div>
+                        <div class="visit-item">
+                            <div class="visit-jp">奈</div>
+                            <div class="visit-info">
+                                <div class="visit-name">Nara</div>
+                                <div class="visit-where">Sacred deer, Great Buddha, Kasuga shrine</div>
+                            </div>
+                        </div>
+                        <div class="visit-item">
+                            <div class="visit-jp">北</div>
+                            <div class="visit-info">
+                                <div class="visit-name">Hokkaido</div>
+                                <div class="visit-where">Lavender fields, snow festivals, wild nature</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right reveal-right">
+                    <div class="contact-box">
+                        <div class="cb-label">BEST TIME</div>
+                        <div class="cb-title">When to arrive</div>
+                        <div class="cb-desc">Spring (March–May) for sakura and mild weather. Autumn (October–November)
+                            for koyo. Avoid Golden Week crowds in early May — arrive a week before.</div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="cb-label">GETTING THERE</div>
+                        <div class="cb-title">How to travel</div>
+                        <div class="cb-desc">Fly into Narita or Haneda (Tokyo) or Kansai Airport (Osaka/Kyoto). The JR
+                            Pass unlocks bullet trains across the entire archipelago — essential for travellers.</div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="cb-label">HIDDEN GEMS</div>
+                        <div class="cb-title">Beyond the obvious</div>
+                        <div class="cb-desc">Kanazawa for samurai districts and art museums. Yakushima island for
+                            2,000-year cedar forests. The Nakasendo trail for three days of mountain silence.</div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="cb-label">PROJECT</div>
+                        <div class="cb-title">About this site</div>
+                        <div class="cb-desc">Yume no Sakura is a personal portfolio project dedicated to the landscapes,
+                            flora, and spiritual places of Japan. Built with pure HTML, CSS, and JavaScript.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="f-logo">Yume no Sakura</div>
+        <div class="f-jp">夢の桜</div>
+        <div class="f-copy">© 2026 · Portfolio Project</div>
+    </footer>
+    
+    <script src="japan.js"></script>
+</body>
+
+</html>
